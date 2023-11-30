@@ -1,0 +1,218 @@
+:root {
+  --gray-bg: #f6f8fa;
+  --main-text-color: #191C1F;
+  --secondary-text-color: #5E646A;
+  --btn-primary-color: #2A6CEA;
+  --btn-hover-color: #397DFF;
+  --btn-dis-bg-color: #ECEFF2;
+  --White: #FFFFFF;
+  --fs-52: 52px;
+  --fs-40: 40px;
+  --fs-32: 32px;
+  --fs-24: 24px;
+  --fs-20: 20px;
+  --fs-18: 18px;
+  --fs-16: 16px;
+  --fs-14: 14px;
+  --fs-12: 12px;
+  --fw-normal: 400;
+  --fw-bold: 600;
+  --lh-64: 64px;
+  --lh-56: 56px;
+  --lh-32: 32px;
+  --lh-24: 24px;
+  --lh-28: 28px;
+  --lh-16: 16px;
+}
+
+@media (max-width: 1240px) {
+  .swiper-slide {
+    width: 352px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .headline-1 {
+    font-size: var(--fs-32);
+    line-height: 40px;
+  }
+  .hero__text .body-18 {
+    font-size: var(--fs-16);
+    line-height: var(--lh-28);
+  }
+  .nav {
+    padding: 28px 15px;
+  }
+  .nav__link {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-top: 1px solid #83898F;
+  }
+  .nav__link:last-of-type {
+    border-bottom: 1px solid #83898F;
+  }
+  .nav__link:not(:last-child) {
+    margin-right: 0;
+  }
+  .nav__link svg {
+    display: block;
+  }
+  .nav__link-text {
+    color: #83898F;
+  }
+  .nav__logo {
+    z-index: 1600;
+  }
+  .nav__logo svg path {
+    fill: black;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .nav__service {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    min-width: 250px;
+    z-index: 1000;
+    padding: 80px 28px 28px 28px;
+    box-shadow: 0 0 5px #888;
+    background-color: #fff;
+    overflow-y: auto;
+    display: none;
+    transform: translateX(220%);
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .nav__service .nav__links {
+    flex-direction: column;
+    visibility: visible;
+  }
+  .nav__service .nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .nav--active {
+    display: block;
+    transform: none;
+  }
+  .burger--active {
+    visibility: visible;
+    z-index: 1001;
+  }
+  .burger--active .burger__line:first-child {
+    position: relative;
+    left: 25%;
+    top: 50%;
+    background-color: black;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  .burger--active .burger__line:last-child {
+    position: relative;
+    bottom: auto;
+    left: 25%;
+    top: 0%;
+    background-color: black;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  .stop-scroll {
+    overflow: hidden;
+  }
+  .explain__list {
+    justify-content: space-between;
+  }
+  .explain__item {
+    width: 342px;
+    margin-bottom: 32px;
+  }
+  .explain__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .explain__hero-left {
+    justify-content: flex-start;
+  }
+  .article__item {
+    max-width: 100%;
+  }
+  .form__left, .form__right {
+    width: 352px;
+  }
+  .form__left {
+    margin-right: 24px;
+  }
+  .form__content {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 475px) {
+  .headline-2 {
+    font-size: var(--fs-24);
+    line-height: var(--lh-32);
+  }
+  .headline-3 {
+    font-size: var(--fs-20);
+    line-height: var(--lh-24);
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .nav {
+    padding: 28px 16px;
+  }
+  .explain__item {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .explain__item-icon {
+    margin-right: 16px;
+    width: 72px;
+    height: 72px;
+  }
+  .explain__hero {
+    flex-direction: column-reverse;
+  }
+  .explain__hero-left, .explain__hero-right {
+    width: 100%;
+  }
+  .explain__hero-left {
+    text-align: center;
+    margin-bottom: -170px;
+  }
+  .pos-abs {
+    max-width: 90%;
+  }
+  .article__item {
+    text-align: left;
+  }
+  .article__item-title {
+    text-align: left;
+  }
+  .form__left, .form__right {
+    width: 100%;
+    margin: 0;
+  }
+  .swiper-slide {
+    width: 288px;
+  }
+}
+@media (max-width: 375px) {
+  .explain__hero-left {
+    margin-bottom: -100px;
+  }
+  .explain__hero-right {
+    height: 320px;
+  }
+  .swiper-slide {
+    width: 288px;
+  }
+}
